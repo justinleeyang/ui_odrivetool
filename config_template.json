@@ -1,0 +1,130 @@
+{
+  "axis0": {
+    "motor": {
+      "config": {
+        "phase_inductance": 0.000014622239177697338,
+        "phase_resistance": 0.03198881819844246,
+        "pole_pairs": 7,
+        "motor_type": 0,
+        "direction": -1,
+        "calibration_current": 10,
+        "current_lim": 10,
+        "pre_calibrated": true,
+        "requested_current_range": 70,
+        "current_control_bandwidth": 1000,
+        "resistance_calib_max_voltage": 1
+      }
+    },
+    "sensorless_estimator": {
+      "config": {
+        "pm_flux_linkage": 0.0015800000401213765,
+        "pll_bandwidth": 1000,
+        "observer_gain": 1000
+      }
+    },
+    "controller": {
+      "config": {
+        "vel_gain": 0.0005000000237487257,
+        "vel_integrator_gain": 0.0010000000474974513,
+        "pos_gain": 20,
+        "vel_limit": 20000,
+        "control_mode": 3
+      }
+    },
+    "config": {
+      "startup_encoder_index_search": false,
+      "ramp_up_distance": 12.566370964050293,
+      "spin_up_current": 10,
+      "startup_motor_calibration": false,
+      "spin_up_target_vel": 400,
+      "startup_sensorless_control": false,
+      "enable_step_dir": false,
+      "ramp_up_time": 0.4000000059604645,
+      "startup_closed_loop_control": true,
+      "counts_per_step": 2,
+      "startup_encoder_offset_calibration": false,
+      "spin_up_acceleration": 400
+    },
+    "encoder": {
+      "config": {
+        "calib_range": 0.019999999552965164,
+        "mode": 0,
+        "offset": -4592,
+        "pre_calibrated": true,
+        "use_index": true,
+        "cpr": 8192,
+        "idx_search_speed": 10,
+        "offset_float": -0.2940935492515564,
+        "bandwidth": 1000
+      }
+    }
+  },
+  "config": {
+    "dc_bus_overvoltage_trip_level": 51.840003967285156,
+    "enable_ascii_protocol_on_usb": true,
+    "dc_bus_undervoltage_trip_level": 8,
+    "enable_uart": true,
+    "enable_i2c_instead_of_can": false,
+    "brake_resistance": 2
+  },
+  "axis1": {
+    "motor": {
+      "config": {
+        "phase_inductance": 0,
+        "phase_resistance": 0,
+        "pole_pairs": 7,
+        "motor_type": 0,
+        "direction": 1,
+        "calibration_current": 10,
+        "current_lim": 10,
+        "pre_calibrated": false,
+        "requested_current_range": 70,
+        "current_control_bandwidth": 1000,
+        "resistance_calib_max_voltage": 1
+      }
+    },
+    "sensorless_estimator": {
+      "config": {
+        "pm_flux_linkage": 0.0015800000401213765,
+        "pll_bandwidth": 1000,
+        "observer_gain": 1000
+      }
+    },
+    "controller": {
+      "config": {
+        "vel_gain": 0.0005000000237487257,
+        "vel_integrator_gain": 0.0010000000474974513,
+        "pos_gain": 20,
+        "vel_limit": 20000,
+        "control_mode": 3
+      }
+    },
+    "config": {
+      "startup_encoder_index_search": false,
+      "ramp_up_distance": 12.566370964050293,
+      "spin_up_current": 10,
+      "startup_motor_calibration": false,
+      "spin_up_target_vel": 400,
+      "startup_sensorless_control": false,
+      "enable_step_dir": false,
+      "ramp_up_time": 0.4000000059604645,
+      "startup_closed_loop_control": false,
+      "counts_per_step": 2,
+      "startup_encoder_offset_calibration": false,
+      "spin_up_acceleration": 400
+    },
+    "encoder": {
+      "config": {
+        "calib_range": 0.019999999552965164,
+        "mode": 0,
+        "offset": 0,
+        "pre_calibrated": false,
+        "use_index": false,
+        "cpr": 8192,
+        "idx_search_speed": 10,
+        "offset_float": 0,
+        "bandwidth": 1000
+      }
+    }
+  }
+}
